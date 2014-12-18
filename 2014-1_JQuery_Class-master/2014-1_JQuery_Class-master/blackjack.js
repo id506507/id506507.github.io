@@ -105,12 +105,13 @@ function shuffle(v) {
 // ==================================
 var deck,player,dealer;
 var busted = false;
+var score = 0;
 
 function outcome(msg,state){
   $("#outcome").text(msg).attr("class","alert alert-" + state);
 }
 
-$(document).ready(function(){
+function init(){
   deck = new Deck();
   deck.shuffle();
   player = new Hand();
@@ -135,7 +136,16 @@ $(document).ready(function(){
       board.append(jQuery("<div class='poker poker-back-heartstone'></div>"));
     else
       board.append($("<div class='poker poker-"+cards[k].toString()+"'></div>"));
-  }
+    }
+}
+
+
+
+
+
+$(document).ready(function(){
+init();
+
 
   $("#player .badge").text(player.get_value());
   // $("#dealer .badge").text(dealer.get_value());
@@ -156,80 +166,43 @@ $(document).ready(function(){
     if(busted)
       outcome("洗洗睡吧","danger");
   });
-
   jQuery("#btn-stand").click(function(){
-    console.log(123);
-    dealer.dealer_run(deck,player);
-    if(player.wins(dealer))
-      outcome("你贏了!","success");
-    else
-      outcome("QQ","danger");
-  });
-
-
-});
-
-var deck,player,dealer;
-var busted = false;
-
-function outcome(msg,state){
-  $("#outcome").text(msg).attr("class","alert alert-" + state);
-}
-
-$(document).ready(function(){
-  deck = new Deck();
-  deck.shuffle();
-  player = new Hand();
-  dealer = new Hand(true);
-
-  player.add_card(deck.deal_card());
-  dealer.add_card(deck.deal_card());
-  player.add_card(deck.deal_card());
-  dealer.add_card(deck.deal_card());
-
-  var board = $("#player .blackjack-board");
-  board.empty();
-  var cards = player.cards;
-  for(k in cards)
-    board.append($("<div class='poker poker-"+cards[k].toString()+"'></div>"));
-
-  board = $("#dealer .blackjack-board");
-  board.empty();
-  var cards = dealer.cards;
-  for(k in cards){
-    if(k == 0)
-      board.append(jQuery("<div class='poker poker-back-heartstone'></div>"));
-    else
-      board.append($("<div class='poker poker-"+cards[k].toString()+"'></div>"));
-  }
-
-  $("#player .badge").text(player.get_value());
-  // $("#dealer .badge").text(dealer.get_value());
-
-  $("#btn-hit").click(function(){
-    //var card = deck.deal_card();
-    if(busted){
-      outcome("你已經死了!!!!","warning");
-      return;
-    }
-    busted = !player.hit(deck);
-    console.log(card.toString());
-    console.log(player.toString());
-    var cardDOM = $("<div class='poker poker-"+player.cards[player.cards.length - 1].toString()+"'></div>");
-    console.log(cardDOM);
-    $("#player .blackjack-board").append(cardDOM);
-    $("#player .badge").text(player.get_value());
-    if(busted)
-      outcome("洗洗睡吧","danger");
-  });
-  jQuery("btn-stand").click(function(){
     console.log(123);
     dealer.dealer_run(deck,player);
     if(player.wins(dealer))
       outcome("你嬴了！","success");
     else
       outcome("QQ","danger");
+
+    var board=$("#dealer .blackjack-board");
+    console.log(board);
+    board.empty();
+    var cards=dealer.cards;
+    for(k in cards){
+      board.append($("<div class='poker poker-"+cards[k].toString()+"'></div>"))
+    }
+    $("#dealer .badge").text(dealer.get_value());
     });
+
+  jQuery("#btn-deal").click(function(){
+    if(!busted){
+      score--;
+      $("#score").text("Score: "+score);
+    }
+    console.log(234);
+    init();
+    outcome("你好",info);
+  });
+
+    $.ajax("http://jquery.pastleo.me/record.php",{
+    dataType:"json",
+    success:function(data){
+      console.log(data);
+      $(".table").empty().append($("<tr><td>玩家</td><td>分數</td></tr>"));
+      for(k in data)
+        $(".table").append($("<tr><td>"+k+"</td><td>"+data[k]+"</td></tr>"));
+    }
+  });
 
 });
 
