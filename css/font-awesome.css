@@ -4,6 +4,10 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.6.3');
@@ -11,6 +15,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+        body{
+            font-family: 'Noto Sans TC', sans-serif;
+        }
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
