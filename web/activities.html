@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>中興大學女生宿舍</title>
+ <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+<!--icon-->
+      <link rel="shortcut icon" href="images/icon.png">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--Google 字型-->
+      <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+      * {
+          font-family: 'Noto Sans TC';
+        }
+    </style>
+<!--table-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="ShowTime()"><!--show date and time-->
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<!--naverbar-->
+  <nav class="naverbar-fixed">
+    <nav><!--side navbar-->
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="http://materializecss.com/images/office.jpg">
+            </div>
+              <i class="material-icons" style="font-size: 80px;">settings_input_antenna</i>
+              <span class="white-text name">你好！</span>
+              <span class="white-text email">歡迎來到這裡！</span>
+          </div>
+        </li>
+        <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>宿舍主頁</a></li>
+        <li><a class="waves-effect" href="announ.html"><i class="material-icons">announcement</i>宿舍公告</a></li>
+        <li><a class="waves-effect" href="activities.html"><i class="material-icons">local_activity</i>宿舍活動</a></li>
+        <li><a class="waves-effect" href="member.html"><i class="material-icons">people</i>宿舍成員</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">宿舍簡介</a></li>
+        <li><a class="waves-effect" href="equipment.html"><i class="material-icons">home</i>宿舍設備</a></li>
+        <li><a class="waves-effect" href="fee.html"><i class="material-icons">attach_money</i>每學期收費標準</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="contact.html"><i class="material-icons">email</i>聯絡我們</a></li>
+      </ul><!--side navbar-->
+
+    <div class="nav-wrapper"><!--navbar-->
+      <a href="index.html" class="brand-logo center">中興大學女生宿舍<i class="material-icons">location_city</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><div id="showbox"></div></li>
+        <!--<li><a href="login.html"><i class="material-icons left">assignment_ind</i>登入<!-Y-旁邊的字-Y-></a></li> -->
+      </ul>
+    </div>
+  </nav>
+  </nav>
+<!--container-->
+  <section>
+    <div class="container">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>9月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>9/9，9/10</td>
+                    <td>新生入住</td>
+                  </tr>
+                  <tr>
+                    <td>9/26</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>9/29</td>
+                    <td>國際書苑：Welcome Party</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>10月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10/2，10/3</td>
+                    <td>主題電影(眼淚系列)</td>
+                  </tr>
+                  <tr>
+                    <td>10/3</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>10/12</td>
+                    <td>全人系列：外國打工經驗分享講堂</td>
+                  </tr>
+                  <tr>
+                    <td>10/17</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>10/24</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>10/25</td>
+                    <td>工作坊：彩妝講座</td>
+                  </tr>
+                  <tr>
+                    <td>10/31</td>
+                    <td>美體課程</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>11月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>11/1</td>
+                    <td>清潔比賽</td>
+                  </tr>
+                  <tr>
+                    <td>11/6，11/7</td>
+                    <td>主題電影(緊張系列)</td>
+                  </tr>
+                  <tr>
+                    <td>11/17</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>11/23</td>
+                    <td>國際書苑：萬聖節手作點心</td>
+                  </tr>
+                  <tr>
+                    <td>11/29</td>
+                    <td>全人系列：專業形象培訓講座</td>
+                  </tr>
+                  <tr>
+                    <td>11/30</td>
+                    <td>語言課程</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header active"><i class="material-icons">today</i>12月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12/4，12/5</td>
+                    <td>主題電影(歡樂系列)</td>
+                  </tr>
+                  <tr>
+                    <td>12/7</td>
+                    <td>語言課程</td>
+                  </tr>
+                  <tr>
+                    <td>12/14</td>
+                    <td>語言課程</td>
+                  </tr>
+                  <tr>
+                    <td>12/19</td>
+                    <td>工作坊：冬至湯圓</td>
+                  </tr>
+                  <tr>
+                    <td>12/21</td>
+                    <td>冬季送暖活動</td>
+                  </tr>
+                  <tr>
+                    <td>12/21</td>
+                    <td>語言課程</td>
+                  </tr>
+                  <tr>
+                    <td>12/26</td>
+                    <td>國際書苑：Farewell Party</td>
+                  </tr>
+                  <tr>
+                    <td>12/28</td>
+                    <td>語言課程</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>1月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1/4</td>
+                    <td>語言課程</td>
+                  </tr>
+                  <tr>
+                    <td>1/19~1/21</td>
+                    <td>期末清檢</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>2月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2/26</td>
+                    <td>全校開始上課</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>3月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3/8，3/9</td>
+                    <td>主題電影(歐美)</td>
+                  </tr>
+                  <tr>
+                    <td>3/13</td>
+                    <td>工作坊：剪紙的藝術</td>
+                  </tr>
+                  <tr>
+                    <td>3/14</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>3/21</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>3/27</td>
+                    <td>國際書苑：Welcome Party</td>
+                  </tr>
+                  <tr>
+                    <td>3/28</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>3/29</td>
+                    <td>講座：觀光一</td>
+                  </tr>
+                  <tr>
+                    <td>12/28</td>
+                    <td>語言課程</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>4月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>4/4~4/6</td>
+                    <td>兒童節、民族掃墓節(放假)</td>
+                  </tr>
+                  <tr>
+                    <td>4/11</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>4/12，4/13</td>
+                    <td>主題電影(日本)</td>
+                  </tr>
+                  <tr>
+                    <td>4/18</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>4/30</td>
+                    <td>工作坊：Word論文格式教學</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>5月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>5/2</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>5/3，5/4</td>
+                    <td>主題電影(台灣)</td>
+                  </tr>
+                  <tr>
+                    <td>5/8</td>
+                    <td>工作坊：ppt、excel教學</td>
+                  </tr>
+                  <tr>
+                    <td>5/9</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>5/10</td>
+                    <td>母親節活動</td>
+                  </tr>
+                  <tr>
+                    <td>5/15</td>
+                    <td>工作坊：相片後製教學一</td>
+                  </tr>
+                  <tr>
+                    <td>5/16</td>
+                    <td>美體課程</td>
+                  </tr>
+                  <tr>
+                    <td>5/22</td>
+                    <td>工作坊：相片後製教學二</td>
+                  </tr>
+                  <tr>
+                    <td>5/29</td>
+                    <td>國際書苑：台灣道地小吃</td>
+                  </tr>
+                  <tr>
+                    <td>5/31</td>
+                    <td>講座：觀光二</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">today</i>6月</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th width="30%">日期</th>
+                      <th>活動</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>6/6</td>
+                    <td>工作坊：影片剪輯教學一</td>
+                  </tr>
+                  <tr>
+                    <td>6/7，6/8</td>
+                    <td>主題電影(亞洲)</td>
+                  </tr>
+                  <tr>
+                    <td>6/12</td>
+                    <td>國際書苑：Farewell Party</td>
+                  </tr>
+                  <tr>
+                    <td>6/13</td>
+                    <td>工作坊：影片剪輯教學二</td>
+                  </tr>
+                  <tr>
+                    <td>6/29，6/30</td>
+                    <td>期末清檢</td>
+                  </tr>
+                </tbody>
+              </table>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="page-footer"><!--footer-->
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">中興女宿資料</h5>
+              <p class="grey-text text-lighten-4">電話：04-22840612
+                <br>E-Mail：femaledormitory@dragon.nchu.edu.tw
+                <br>地址：40249台中市南區國光路295號(註明棟別房號姓名)
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">連結</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="sitmap.html" target="_blank">網頁地圖</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://id506507.github.io/" target="_blank">開發者網站</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    function ShowTime(){
+    　var Today=new Date();
+      var y=Today.getFullYear();
+      var mo=Today.getMonth()+1;
+      var d=Today.getDate();
+    　var h=Today.getHours();
+    　var m=Today.getMinutes();
+    　var s=Today.getSeconds();　
+    　document.getElementById('showbox').innerHTML =y+"年"+mo+"月"+d+"日"+" "+h+':'+m+':'+s;
+    　setTimeout('ShowTime()',1000);
+  }
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+  </script>
+     
+</body>
+</html>

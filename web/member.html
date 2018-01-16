@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>中興大學女生宿舍</title>
+ <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+<!--icon-->
+      <link rel="shortcut icon" href="images/icon.png">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--Google 字型-->
+      <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+      * {
+          font-family: 'Noto Sans TC';
+        }
+    </style>
+<!--table-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="ShowTime()"><!--show date and time-->
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<!--naverbar-->
+  <nav class="naverbar-fixed">
+    <nav><!--side navbar-->
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="http://materializecss.com/images/office.jpg">
+            </div>
+              <i class="material-icons" style="font-size: 80px;">settings_input_antenna</i>
+              <span class="white-text name">你好！</span>
+              <span class="white-text email">歡迎來到這裡！</span>
+          </div>
+        </li>
+        <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>宿舍主頁</a></li>
+        <li><a class="waves-effect" href="announ.html"><i class="material-icons">announcement</i>宿舍公告</a></li>
+        <li><a class="waves-effect" href="activities.html"><i class="material-icons">local_activity</i>宿舍活動</a></li>
+        <li><a class="waves-effect" href="member.html"><i class="material-icons">people</i>幹部成員</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">宿舍簡介</a></li>
+        <li><a class="waves-effect" href="equipment.html"><i class="material-icons">home</i>宿舍設備</a></li>
+        <li><a class="waves-effect" href="fee.html"><i class="material-icons">attach_money</i>每學期收費標準</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="contact.html"><i class="material-icons">email</i>聯絡我們</a></li>
+      </ul><!--side navbar-->
+
+    <div class="nav-wrapper"><!--navbar-->
+      <a href="index.html" class="brand-logo center">中興大學女生宿舍<i class="material-icons">location_city</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><div id="showbox"></div></li>
+        <li><!--<a href="login.html"><i class="material-icons left">assignment_ind</i>登入<!--旁邊的字</a>--></li>
+      </ul>
+    </div>
+  </nav>
+  </nav>
+<!--container-->
+  <section>
+    <div class="container">
+      <div class="section">
+        <h3>以下為宿舍幹部成員：</h3>
+      </div>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">person</i>主副委</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>主委</td>
+                  <td>涂鳳涓</td>
+                  <td>科法一</td>
+                  <td>5135</td>
+                </tr>
+                <tr>
+                  <td>副主委</td>
+                  <td>鄭欣宜</td>
+                  <td>圓藝三</td>
+                  <td>5152</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">person</i>樸軒樓長</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>一樓(小組長)</td>
+                  <td>邱文真</td>
+                  <td>歷史三</td>
+                  <td>5234</td>
+                </tr>
+                <tr>
+                  <td>二樓</td>
+                  <td>林韵晴</td>
+                  <td>行銷二</td>
+                  <td>5246</td>
+                </tr>
+                <tr>
+                  <td>三樓</td>
+                  <td>李晴</td>
+                  <td>植病二</td>
+                  <td>5262</td>
+                </tr>
+                <tr>
+                  <td>四樓</td>
+                  <td>盧怡臻</td>
+                  <td>應數二</td>
+                  <td>5280</td>
+                </tr>
+                <tr>
+                  <td>五樓</td>
+                  <td>曹京華</td>
+                  <td>生科二</td>
+                  <td>5296</td>
+                </tr>
+                <tr>
+                  <td>六樓</td>
+                  <td>蔡昀涵</td>
+                  <td>法律二</td>
+                  <td>5314</td>
+                </tr>
+                <tr>
+                  <td>七樓</td>
+                  <td>蔡沛芳</td>
+                  <td>昆蟲二</td>
+                  <td>5332</td>
+                </tr>
+                <tr>
+                  <td>八樓</td>
+                  <td>曾奕涵</td>
+                  <td>行銷二</td>
+                  <td>5348</td>
+                </tr>
+                <tr>
+                  <td>九樓</td>
+                  <td>王宣雯</td>
+                  <td>應經二</td>
+                  <td>5364</td>
+                </tr>
+                <tr>
+                  <td>十樓</td>
+                  <td>周書懃</td>
+                  <td>行銷二</td>
+                  <td>5382</td>
+                </tr>
+                <tr>
+                  <td>十一樓</td>
+                  <td>楊心語</td>
+                  <td>昆蟲二</td>
+                  <td>5398</td>
+                </tr>
+
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">person</i>勤軒樓長</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>一樓</td>
+                  <td>張易安</td>
+                  <td>農藝二</td>
+                  <td>5092</td>
+                </tr>
+                <tr>
+                  <td>二樓</td>
+                  <td>何善學</td>
+                  <td>農藝二</td>
+                  <td>5108</td>
+                </tr>
+                <tr>
+                  <td>三樓(小組長)</td>
+                  <td>陳鳳翎</td>
+                  <td>園藝四</td>
+                  <td>5127</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">person</i>華軒樓長</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>一樓(小組長)</td>
+                  <td>王昱蘋</td>
+                  <td>歷史三</td>
+                  <td>5163</td>
+                </tr>
+                <tr>
+                  <td>二樓</td>
+                  <td>鄭晴文</td>
+                  <td>物理二</td>
+                  <td>5181</td>
+                </tr>
+                <tr>
+                  <td>三樓</td>
+                  <td>徐沛岑</td>
+                  <td>化工二</td>
+                  <td>5199</td>
+                </tr>
+                <tr>
+                  <td>四樓</td>
+                  <td>梁文馨</td>
+                  <td>生技二</td>
+                  <td>5217</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">person</i>怡軒樓長</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>一樓</td>
+                  <td>陳嘉禧</td>
+                  <td>生技四</td>
+                  <td>5011</td>
+                </tr>
+                <tr>
+                  <td>二樓(小組長)</td>
+                  <td>許舒涵</td>
+                  <td>應經博五</td>
+                  <td>5049</td>
+                </tr>
+                <tr>
+                  <td>三樓</td>
+                  <td>張郁婕</td>
+                  <td>應經博四</td>
+                  <td>5049</td>
+                </tr>
+                <tr>
+                  <td>四樓</td>
+                  <td>黎氏青草</td>
+                  <td>中文所</td>
+                  <td>5070</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header active"><i class="material-icons">person</i>網管</div>
+          <div class="collapsible-body">
+            <span>
+              <table class="striped centered">
+              <thead>
+                <tr>
+                    <th>職位</th>
+                    <th>姓名</th>
+                    <th>系級</th>
+                    <th>分機</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>網管長(樸611)</td>
+                  <td>徐子涵</td>
+                  <td>資工四</td>
+                  <td>5323</td>
+                </tr>
+                <tr>
+                  <td>網管(樸611)</td>
+                  <td>杜津</td>
+                  <td>資工三</td>
+                  <td>5323</td>
+                </tr>
+                <tr>
+                  <td>網管(樸612)</td>
+                  <td>陳子晴</td>
+                  <td>資工四</td>
+                  <td>5262</td>
+                </tr>
+                <tr>
+                  <td>網管(樸612)</td>
+                  <td>鍾佳妤</td>
+                  <td>生機二</td>
+                  <td>5262</td>
+                </tr>
+                <tr>
+                  <td>網管(勤209)</td>
+                  <td>吳昭儀</td>
+                  <td>資工四</td>
+                  <td>5115</td>
+                </tr>
+                <tr>
+                  <td>網管(勤209)</td>
+                  <td>朱詠田</td>
+                  <td>資工二</td>
+                  <td>5115</td>
+                </tr>
+                <tr>
+                  <td>網管(華206)</td>
+                  <td>劉子睿</td>
+                  <td>資工四</td>
+                  <td>5184</td>
+                </tr>
+                <tr>
+                  <td>網管(華206)</td>
+                  <td>張新嘉</td>
+                  <td>環工三</td>
+                  <td>5184</td>
+                </tr>
+                <tr>
+                  <td>網管(怡208)</td>
+                  <td>洪子玲</td>
+                  <td>電機碩二</td>
+                  <td>5036</td>
+                </tr>
+                <tr>
+                  <td>網管(怡208)</td>
+                  <td>鍾昀芳</td>
+                  <td>電機碩一</td>
+                  <td>5036</td>
+                </tr>
+               
+              </tbody>
+            </table>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="page-footer"><!--footer-->
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">中興女宿資料</h5>
+              <p class="grey-text text-lighten-4">電話：04-22840612
+                <br>E-Mail：femaledormitory@dragon.nchu.edu.tw
+                <br>地址：40249台中市南區國光路295號(註明棟別房號姓名)
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">連結</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="sitmap.html" target="_blank">網頁地圖</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://id506507.github.io/" target="_blank">開發者網站</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    function ShowTime(){
+    　var Today=new Date();
+      var y=Today.getFullYear();
+      var mo=Today.getMonth()+1;
+      var d=Today.getDate();
+    　var h=Today.getHours();
+    　var m=Today.getMinutes();
+    　var s=Today.getSeconds();　
+    　document.getElementById('showbox').innerHTML =y+"年"+mo+"月"+d+"日"+" "+h+':'+m+':'+s;
+    　setTimeout('ShowTime()',1000);
+  }
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+  </script>
+     
+</body>
+</html>

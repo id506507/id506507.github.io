@@ -1,0 +1,148 @@
+<!--
+  😂
+  帳號：admin
+  密瑪：admin
+  😂   
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>中興大學女生宿舍</title>
+ <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+<!--icon-->
+      <link rel="shortcut icon" href="images/icon.png">
+<!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--Google 字型-->
+      <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+      * {
+          font-family: 'Noto Sans TC';
+        }
+    </style>
+<!--table-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="ShowTime()"><!--show date and time-->
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<!--naverbar-->
+  <nav class="naverbar-fixed">
+    <nav><!--side navbar-->
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+      <ul id="slide-out" class="side-nav">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="http://materializecss.com/images/office.jpg">
+            </div>
+              <i class="material-icons" style="font-size: 80px;">settings_input_antenna</i>
+              <span class="white-text name">你好！</span>
+              <span class="white-text email">歡迎來到這裡！</span>
+          </div>
+        </li>
+        <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>宿舍主頁</a></li>
+        <li><a class="waves-effect" href="announ.html"><i class="material-icons">announcement</i>宿舍公告</a></li>
+        <li><a class="waves-effect" href="activities.html"><i class="material-icons">local_activity</i>宿舍活動</a></li>
+        <li><a class="waves-effect" href="member.html"><i class="material-icons">people</i>宿舍成員</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">宿舍簡介</a></li>
+        <li><a class="waves-effect" href="equipment.html"><i class="material-icons">home</i>宿舍設備</a></li>
+        <li><a class="waves-effect" href="fee.html"><i class="material-icons">attach_money</i>每學期收費標準</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="contact.html"><i class="material-icons">email</i>聯絡我們</a></li>
+      </ul><!--side navbar-->
+
+    <div class="nav-wrapper"><!--navbar-->
+      <a href="index.html" class="brand-logo center">中興大學女生宿舍<i class="material-icons">location_city</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><div id="showbox"></div></li>
+        <li><a href="login.html"><i class="material-icons left">assignment_ind</i>登入<!--旁邊的字--></a></li>
+      </ul>
+    </div>
+  </nav>
+  </nav>
+<!--container-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <form class="col s12" method="post" action="management.html">
+          <fieldset>
+          <legend>登入：</legend>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="_id" type="text" class="validate">
+              <label for="_id">帳號</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="_pw" type="text" class="validate">
+              <label for="_pw">密碼</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit" onclick="management.html">Submit<i class="material-icons right">send</i></button>
+          </fieldset>
+          <br><br><br>
+          <p>如忘記密碼，請按F12，但....手機沒有</p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="page-footer"><!--footer-->
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">中興女宿資料</h5>
+              <p class="grey-text text-lighten-4">電話：04-22840612
+                <br>E-Mail：femaledormitory@dragon.nchu.edu.tw
+                <br>地址：40249台中市南區國光路295號(註明棟別房號姓名)
+              </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">連結</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="sitmap.html" target="_blank">網頁地圖</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://id506507.github.io/" target="_blank">開發者網站</a></li>
+                <li><a class="grey-text text-lighten-3" href="http://id506507.github.io/" target="_blank"><img src="images/qrcode.jpg" width="20%"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    function ShowTime(){
+    　var Today=new Date();
+      var y=Today.getFullYear();
+      var mo=Today.getMonth()+1;
+      var d=Today.getDate();
+    　var h=Today.getHours();
+    　var m=Today.getMinutes();
+    　var s=Today.getSeconds();　
+    　document.getElementById('showbox').innerHTML =y+"年"+mo+"月"+d+"日"+" "+h+':'+m+':'+s;
+    　setTimeout('ShowTime()',1000);
+  }
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+  </script>
+     
+</body>
+</html>
