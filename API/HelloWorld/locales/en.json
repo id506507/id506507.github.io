@@ -1,0 +1,16 @@
+{
+
+    "title":"Name",
+    "self":"Brief",
+    "introduction":"Introduction",
+    "area":"Township/Urban Area",
+    "address":"Address",
+    "tel":"Telephone",
+    "transport":"Transport",
+    "ticket":"Ticket Information",
+    "car":"Car Information",
+    "parking":"Parking Information",
+    "remind":"Tips",
+    "waiting":"A&E Waiting Time"
+    
+}

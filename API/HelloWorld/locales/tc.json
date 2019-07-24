@@ -1,0 +1,14 @@
+{
+    "title":"名稱",
+    "self":"簡述",
+    "introduction":"介紹",
+    "area":"鄉鎮市區",
+    "address":"地址",
+    "tel":"電話",
+    "transport":"大眾運輸",
+    "ticket":"門票資訊",
+    "car":"行車資訊",
+    "parking":"停車資訊",
+    "remind":"旅遊叮嚀",
+    "waiting":"急症室等候時間"
+}
