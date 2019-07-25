@@ -28,7 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    "~/plugins/i18n.ts"
+    "~/plugins/i18n.ts",
+    "~/plugins/axios"
   ],
   /*
   ** Nuxt.js modules
@@ -39,7 +40,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    
+    '@nuxtjs/proxy',
   ],
   /*
   ** Axios module configuration
@@ -47,6 +48,17 @@ export default {
   */
   axios: {
     //proxyHeaders:false
+    proxy:true,
+    prefix:'/api',
+    credentials:true,
+  },
+  proxy:{
+    '/api':{
+      target:'http://www.ha.org.hk/opendata/sop/sop-waiting-time-tc.json',
+      pathRewrite:{
+        '^/api': '',
+      },
+    }
   },
   /*
   ** Build configuration

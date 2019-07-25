@@ -12,7 +12,7 @@
 import { Vue,Component } from "nuxt-property-decorator";
 import axios from 'axios';
 @Component
-export default class WeatherPage extends Vue{
+export default class UsefulPage extends Vue{
     // Length=0;
     async asyncData(Length:number){
         let [waiting]=await Promise.all([

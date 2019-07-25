@@ -15,6 +15,9 @@
                 <li class="nav-item active">
                     <nuxt-link to="/useful" class="nav-link">Useful</nuxt-link>
                 </li>
+                <li class="nav-item active">
+                    <nuxt-link to="/useful2" class="nav-link">Useful2</nuxt-link>
+                </li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">

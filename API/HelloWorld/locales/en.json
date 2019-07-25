@@ -11,6 +11,7 @@
     "car":"Car Information",
     "parking":"Parking Information",
     "remind":"Tips",
-    "waiting":"A&E Waiting Time"
+    "waiting":"Accident and Emergency Waiting Time",
+    "sop":"General Outpatient Clinic Quota"
     
 }
