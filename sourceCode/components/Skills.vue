@@ -7,7 +7,9 @@
       </li>
     </ul> -->
     <div v-for="(item, index) in skillList" :key="index">
-      <h2 class="skillSubTitle">{{ item.display }}</h2>
+      <h2 class="skillSubTitle">
+        {{ $translate(item.display.chi, item.display.eng) }}
+      </h2>
       <div>
         <div
           v-for="(skill, sIndex) in item.items"
@@ -26,25 +28,9 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {
-      backend: [
-        'Java Spring Boot',
-        'C# .NET / .NET Core',
-        'Python',
-        'SQL (MS SQL, PostgreSQL)',
-        'Redis',
-        'MVC',
-      ],
-      frontend: [
-        'Angular',
-        'Vue.js / Nuxt.js',
-        'HTML',
-        'TypeScript / JavaScript',
-        'CSS',
-      ],
-      other: ['Azure Cloud', 'Elasticsearch', 'Selenium'],
       skillList: [
         {
-          display: 'Backend Development',
+          display: { eng: 'Backend Development', chi: '後端關發' },
           items: [
             'Java Spring Boot',
             'C# .NET / .NET Core',
@@ -55,7 +41,7 @@ export default Vue.extend({
           ],
         },
         {
-          display: 'Frontend Development',
+          display: { eng: 'Frontend Development', chi: '前端開發' },
           items: [
             'Angular',
             'Vue.js / Nuxt.js',
@@ -65,7 +51,10 @@ export default Vue.extend({
           ],
         },
         {
-          display: 'Cloud, Search, Automation',
+          display: {
+            eng: 'Cloud, Search, Automation',
+            chi: '雲端、搜尋、自動化',
+          },
           items: ['Azure Cloud', 'Elasticsearch', 'Selenium'],
         },
       ],
