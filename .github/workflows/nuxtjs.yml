@@ -46,13 +46,13 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-      - name: Change Working Directory
-        run: cd sourceode
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache-dependency-path: sourceCode
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -70,6 +70,8 @@ jobs:
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
+      - name: Change Working Directory
+        run: cd sourceCode
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with Nuxt
