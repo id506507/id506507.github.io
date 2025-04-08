@@ -77,7 +77,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: cd sourceCode && ./dist
+          path: ./sourceCode/dist
 
   # Deployment job
   deploy:
