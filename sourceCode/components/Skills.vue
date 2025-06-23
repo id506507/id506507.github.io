@@ -35,7 +35,7 @@ export default Vue.extend({
             'Java Spring Boot',
             'C# .NET / .NET Core',
             'Python',
-            'SQL (MS SQL, PostgreSQL)',
+            'SQL (MS SQL, PostgreSQL, MySQL)',
             'Redis',
             'MVC',
           ],
