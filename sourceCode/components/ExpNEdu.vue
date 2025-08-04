@@ -57,7 +57,7 @@ export default Vue.extend({
       work: {
         eng: [
           {
-            date: '2025.04 - Present',
+            date: '2025.04 - 2025.07',
             title: 'Analyst Programmer',
             organization: 'Global Logistics System (HK) Co., Ltd',
             detailList: [
@@ -107,7 +107,7 @@ export default Vue.extend({
         ],
         chi: [
           {
-            date: '2025.04 - 現在',
+            date: '2025.04 - 2025.07',
             title: '程式分析員',
             organization: '傳訊香港有限公司',
             detailList: [
