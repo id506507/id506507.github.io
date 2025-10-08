@@ -93,8 +93,8 @@ export default Vue.extend({
             title: 'Web Developer',
             organization: 'Freelance',
             detailList: [
-              "Revamped eBay Automotive Parts Sales Website from scratch using plain HTML and CSS, assisting the store in showcasing new products and expediting customers' ability to find the items they want.",
-            ],
+              "Revamped Automotive Parts Sales Website, assisting the store in showcasing new products and expediting customers' ability to find the items they want.",
+            ], // Revamped eBay Automotive Parts Sales Website from scratch using plain HTML and CSS
           },
           {
             date: '2015.09 - 2018.06',
@@ -143,7 +143,7 @@ export default Vue.extend({
             title: '網頁編寫',
             organization: 'Freelance',
             detailList: [
-              '從頭開始使用純 HTML 和 CSS 改進 eBay 汽車零件銷售網站，幫助商店展示新產品，加快客戶找到所需商品的能力。',
+              '從頭開始改進汽車零件銷售網站，幫助商店展示新產品，加快客戶找到所需商品的能力。', //使用純 HTML 和 CSS 改進 eBay 
             ],
           },
           {
