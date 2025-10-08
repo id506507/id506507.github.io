@@ -43,7 +43,7 @@ export default Vue.extend({
         {
           display: { eng: 'Frontend Development', chi: '前端開發' },
           items: [
-            'React',
+            'React.js',
             'Angular',
             'Vue.js / Nuxt.js',
             'HTML',
