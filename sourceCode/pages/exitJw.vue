@@ -8,7 +8,7 @@
       <ol>
         <li>經織的教義會不斷調整</li>
         <li>中央長老團是受神聖力量指引</li>
-        <li>真理之光真越來越亮</li>
+        <li>真理之光真越照越亮</li>
       </ol>
     </div>
 
@@ -40,7 +40,7 @@
         target="_blank"
         >《你希望兒女有怎樣的前途？》</a
       >裡面又提出不少大學教育的壞處。在<a :href="getLink(6)" target="_blank"
-        >《2025來自中央長老團的報導（五）》</a
+        >《2025來自中央長老團的報導 (五)》</a
       >中表示要不要接受額外的教育是每個基督徒自己的決定，甚至任何人包括長老在內都不該評斷另一個基督徒所做的決定。而從小我已經常常聽到比起大學教育，應該要去讀一些實用的課程，因為實用的課程可以令我們盡快找到工作，可以將重心放在傳道工作，而且大學裡面有很多事情可以絆倒我們，甚至會令人愈來愈驕傲，最後放棄耶和華。由此可見，在這36年來，組織對額外教育已經有不同的立場。
     </div>
 
@@ -107,11 +107,11 @@ export default Vue.extend({
         },
         {
           index: 3,
-          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/1992804',
+          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/1992804#:~:text=%E5%9C%A8%E8%A8%B1%E5%A4%9A%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%BA%BA%E8%8B%A5%E5%83%85%E6%98%AF%E5%AE%8C%E6%88%90%E6%B3%95%E5%BE%8B%E6%89%80%E8%A6%8F%E5%AE%9A%E7%9A%84%E6%9C%80%E4%BD%8E%E7%A8%8B%E5%BA%A6%E7%9A%84%E5%AD%B8%E6%A0%A1%E6%95%99%E8%82%B2%EF%BC%88%E5%9C%A8%E6%9C%89%E4%BA%9B%E5%9C%8B%E5%AE%B6%E8%A3%8F%EF%BC%8C%E7%94%9A%E8%87%B3%E9%81%94%E5%88%B0%E4%B8%AD%E5%AD%B8%E7%95%A2%E6%A5%AD%E7%9A%84%E7%A8%8B%E5%BA%A6%EF%BC%89%EF%BC%8C%E5%B0%B1%E5%BE%88%E9%9B%A3%E6%89%BE%E7%9D%80%E8%96%AA%E9%85%AC%E9%81%A9%E7%95%B6%E7%9A%84%E5%B7%A5%E4%BD%9C%E3%80%82',
         },
         {
           index: 4,
-          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/1999643',
+          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/1999643#:~:text=%E5%B9%B4%E8%BC%95%E4%BA%BA%E4%BD%9C%E5%87%BA%E9%80%99%E6%A8%A3%E7%9A%84%E8%A8%88%E5%8A%83%EF%BC%8C%E5%A5%BD%E4%BD%BF%E8%87%AA%E5%B7%B1%E5%9C%A8%E6%88%90%E5%B9%B4%E5%BE%8C%E6%9C%89%E8%83%BD%E5%8A%9B%E8%B2%A0%E8%B5%B7%E8%B2%AC%E4%BB%BB%EF%BC%8C%E7%89%B9%E5%88%AB%E6%98%AF%E8%A6%81%E5%AF%A6%E7%8F%BE%E5%81%9A%E5%85%88%E9%A9%85%E7%9A%84%E9%95%B7%E6%9C%9F%E7%9B%AE%E6%A8%99%EF%BC%8C%E9%80%99%E8%B7%9F%E9%A6%96%E5%85%88%E5%B0%8B%E6%B1%82%E4%B8%8A%E5%B8%9D%E7%8E%8B%E5%9C%8B%E4%B8%A6%E6%B2%92%E6%9C%89%E6%8A%B5%E8%A7%B8%E3%80%82%EF%BC%88%E9%A6%AC%E5%A4%AA%E7%A6%8F%E9%9F%B36%3A33%EF%BC%89%E5%B9%B4%E8%BC%95%E4%BA%BA%E6%8E%A5%E5%8F%97%E9%A1%8D%E5%A4%96%E6%95%99%E8%82%B2%EF%BC%8C%E4%B8%A6%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%A1%A8%E7%A4%BA%E4%BB%96%E5%80%91%E6%94%BE%E6%A3%84%E4%BA%86%E5%81%9A%E5%85%88%E9%A9%85%E7%9A%84%E7%9B%AE%E6%A8%99%E3%80%82',
         },
         {
           index: 5,
@@ -127,7 +127,7 @@ export default Vue.extend({
         },
         {
           index: 8,
-          href: 'https://wol.jw.org/cmn-Hant/wol/d/r24/lp-ch/1980212',
+          href: 'https://wol.jw.org/cmn-Hant/wol/d/r24/lp-ch/1980212#:~:text=%E9%9B%96%E7%84%B6%E8%81%96%E7%B6%93%E6%98%8E%E4%BB%A4%E7%A6%81%E6%AD%A2%E4%BA%BA%E5%90%83%E8%A1%80%EF%BC%8C%E5%8D%BB%E6%B2%92%E6%9C%89%E4%BB%BB%E4%BD%95%E8%81%96%E7%B6%93%E5%91%BD%E4%BB%A4%E6%98%8E%E7%A2%BA%E5%9C%B0%E7%A6%81%E6%AD%A2%E4%BA%BA%E5%90%B8%E6%94%B6%E5%88%A5%E4%BA%BA%E7%9A%84%E9%AB%94%E7%B4%A0%E3%80%82%E7%94%B1%E6%96%BC%E9%80%99%E7%B7%A3%E6%95%85%EF%BC%8C%E6%AF%8F%E5%80%8B%E9%9D%A2%E5%B0%8D%E9%80%99%E9%A0%85%E6%B1%BA%E5%AE%9A%E7%9A%84%E4%BA%BA%E5%9D%87%E6%87%89%E7%95%B6%E4%BB%94%E7%B4%B0%E5%92%8C%E8%99%94%E8%AA%A0%E5%9C%B0%E8%80%83%E6%85%AE%E9%80%99%E4%BB%B6%E4%BA%8B%E3%80%82%E7%84%B6%E5%BE%8C%E6%8C%89%E7%85%A7%E8%89%AF%E5%BF%83%E6%B1%BA%E5%AE%9A%E4%BB%96%E5%9C%A8%E4%B8%8A%E5%B8%9D%E9%9D%A2%E5%89%8D%E5%8F%AF%E4%BB%A5%E6%88%96%E4%B8%8D%E5%8F%AF%E4%BB%A5%E6%80%8E%E6%A8%A3%E8%A1%8C%E3%80%82',
         },
         {
           index: 9,
@@ -161,6 +161,8 @@ export default Vue.extend({
   margin: 1%;
 }
 .param {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.6;
 }
 </style>
