@@ -14,16 +14,6 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-
-            // 這四行一定要寫在 nuxt.config.js 就夠了，強迫 WhatsApp 讀它
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://id506507.github.io' },  // 一定要寫完整 https
-      // { property: 'og:image', content: 'https://你的正式域名.com/og-preview.jpg' },
-      { property: 'og:site_name', content: `Angus's Personal Website` },   // 這行最關鍵！
-      
-      // 下面這兩個可以讓各頁面再覆蓋
-      { hid: 'og:title', property: 'og:title', content: '預設標題' },
-      { hid: 'og:description', property: 'og:description', content: '預設描述' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/user.png' },
