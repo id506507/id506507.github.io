@@ -94,6 +94,18 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  head() {
+    return {
+        title: '離開耶和華見證人的原因',
+        meta: [
+          {
+            hid: 'personal-exitJw',
+            name: 'exitJw',
+            content: '這個頁面是用來解釋我為什麼會離開耶和華見證人。',
+          }
+        ],
+    }
+  },
   data() {
     return {
       link: [
