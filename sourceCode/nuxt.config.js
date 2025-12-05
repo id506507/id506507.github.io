@@ -16,8 +16,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
 
             // 這四行一定要寫在 nuxt.config.js 就夠了，強迫 WhatsApp 讀它
-      // { property: 'og:type', content: 'website' },
-      // { property: 'og:url', content: 'https://你的正式域名.com' },  // 一定要寫完整 https
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://id506507.github.io' },  // 一定要寫完整 https
       // { property: 'og:image', content: 'https://你的正式域名.com/og-preview.jpg' },
       { property: 'og:site_name', content: `Angus's Personal Website` },   // 這行最關鍵！
       
