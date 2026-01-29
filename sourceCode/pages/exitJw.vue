@@ -12,7 +12,7 @@
         :href="getLink(11)"
         target="_blank"
         >《耶和華見證人——在普世團結一致地遵行上帝的旨意》</a
-      >這個冊子中的「團結一致地牧養上帝的羊群」指出「他們並非受上帝所感示，因此不是永不犯錯的，但是他們將上帝那萬無謬誤的話語視為世上最高的權威，全心信賴聖經的指引，並且在順服上帝的旨意方面積聚了一生的豐富經驗。」
+      >這個冊子中的「團結一致地牧養上帝的羊群」指出「他們並非受上帝所感示，因此不是永不犯錯的」
       <figure class="screenshot">
         <img :src="getScreenshot(11)" />
         <figcaption>{{ getCaption(11) }}</figcaption>
@@ -182,7 +182,7 @@ export default Vue.extend({
         },
         {
           index: 2,
-          href: 'https://wol.jw.org/cmn-Hant/wol/d/r24/lp-ch/101971400',
+          href: 'https://wol.jw.org/cmn-Hant/wol/d/r24/lp-ch/101971400#:~:text=%E7%9B%B8%E4%BC%BC%E8%B3%87%E6%96%99-,%E4%B8%8D%E9%81%A9%E7%95%B6%E7%9A%84%E8%AA%B2%E7%A8%8B,%E5%B0%B1%E6%A5%AD%E6%A9%9F%E6%9C%83,-%E5%85%B6%E4%BB%96%E5%B7%A5%E4%BD%9C',
         },
         {
           index: 3,
@@ -234,7 +234,7 @@ export default Vue.extend({
         },
         {
           index: 15,
-          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/101968451#h=1:0-9:0',
+          href: 'https://wol.jw.org/yue-Hant/wol/d/r214/lp-chc/101968451',
         },
       ],
       caption: [
@@ -252,7 +252,7 @@ export default Vue.extend({
         },
         {
           index: 2,
-          text: '來自《對大學教育的新評估》的截圖，每個分標題都是對大學教育的批評',
+          text: '來自《對大學教育的新評估》的截圖，差不多全部分標題都是對大學教育的批評',
         },
         {
           index: 1,
