@@ -1,25 +1,32 @@
 <template>
   <div :class="isMobileDevice ? 'bannerMobile' : 'banner'" id="banner">
     <div class="menu">
-      <span v-if="!sideBtn && showBurger" @click="changeMenu()" class="burger">≡</span>
-      <span v-if="sideBtn && showBurger" @click="changeMenu()" class="burger">&times;</span>
+      <span v-if="!sideBtn && showBurger" @click="changeMenu()" class="burger"
+        >≡</span
+      >
+      <span v-if="sideBtn && showBurger" @click="changeMenu()" class="burger"
+        >&times;</span
+      >
     </div>
     <!-- <div class="top" @click="anchor('Home')">
       <h3>My Info</h3>
       <span>WHO I AM</span>
     </div> -->
     <div class="title">
-      <h3>{{$translate('我是誰？','Who am I?')}}</h3>
+      <h3>{{ $translate('我是誰？', 'Who am I?') }}</h3>
       <div>
         <div>
-          <span class="bannerText">{{$translate('我是 ', 'I am ')}}</span>
+          <span class="bannerText">{{ $translate('我是 ', 'I am ') }}</span>
           <span class="bannerName">Angus Chan </span>
           <span class="bannerText">.</span>
         </div>
         <div class="bannerSen">
-          {{$translate('這是我的個人網頁，希望各位可以透過這個網頁對我有基本的認識。', 
-          'This is my personal website. I hope you can get to know me more through this page.')}}
-          
+          {{
+            $translate(
+              '這是我的個人網頁，希望各位可以透過這個網頁對我有基本的認識。',
+              'This is my personal website. I hope you can get to know me more through this page.'
+            )
+          }}
         </div>
         <button
           class="bannerBtn"
@@ -36,7 +43,9 @@
       </div>
     </div>
     <div class="sideMenu" id="sideMenu" v-if="showBurger">
-      <div v-for="(item, index) in menu" :key="index" @click="anchor(item.eng)">{{ $translate(item.chi, item.eng) }}</div>
+      <div v-for="(item, index) in menu" :key="index" @click="anchor(item.eng)">
+        {{ $translate(item.chi, item.eng) }}
+      </div>
     </div>
   </div>
 </template>
@@ -81,108 +90,122 @@ export default Vue.extend({
     }
   },
   mounted() {
-    var langParam = this.$route.query.lang;
+    var langParam = this.$route.query.lang
 
-    if(langParam && (langParam == 'en' || langParam == 'chi')) {
-      this.$store.commit('changeLang', langParam);
-    }
-    else {
-      this.$router.push({path: this.$route.path, query: { lang: 'en' }});
-      this.$store.commit('changeLang', 'en');
+    if (langParam && (langParam == 'en' || langParam == 'chi')) {
+      this.$store.commit('changeLang', langParam)
+    } else {
+      this.$router.push({ path: this.$route.path, query: { lang: 'en' } })
+      this.$store.commit('changeLang', 'en')
     }
 
-    window.addEventListener('scroll', this.onWindowScroll);
-    this.showBurgerLength = document.getElementById('aboutMeSection')?.offsetTop ?? 0;
-    this.isMobile();
+    window.addEventListener('scroll', this.onWindowScroll)
+    this.showBurgerLength =
+      document.getElementById('aboutMeSection')?.offsetTop ?? 0
+    this.isMobile()
+    this.setTitle()
   },
   destroyed() {
-    window.removeEventListener('scroll', this.onWindowScroll);
+    window.removeEventListener('scroll', this.onWindowScroll)
   },
   computed: {
-    lang: function() {
-      return this.$store.state.lang;
+    lang: function () {
+      return this.$store.state.lang
     },
   },
   watch: {
-    lang(newVal) {}
+    lang(newVal) {},
   },
   methods: {
     anchor(section: string) {
-      let name = '';
-      switch(section.toLowerCase().replaceAll(' ', '')) {
+      let name = ''
+      switch (section.toLowerCase().replaceAll(' ', '')) {
         default:
         case 'home':
-          name = 'banner';
-          break;
+          name = 'banner'
+          break
         case 'about':
-          name = 'aboutMeSection';
-          break;
+          name = 'aboutMeSection'
+          break
         case 'skills':
-          name = 'skill';
-          break;
+          name = 'skill'
+          break
         case 'experience&education':
-          name = 'expNEdu';
-          break;
+          name = 'expNEdu'
+          break
         case 'services':
-          name = 'services';
-          break;
+          name = 'services'
+          break
         case 'contact':
-          name = 'contact';
-          break;
+          name = 'contact'
+          break
         case '中/eng':
-          if(this.lang == 'en') {
-            this.$store.commit('changeLang', 'chi');
+          if (this.lang == 'en') {
+            this.$store.commit('changeLang', 'chi')
           } else {
-            this.$store.commit('changeLang', 'en');
+            this.$store.commit('changeLang', 'en')
           }
-          break;
+          this.setTitle()
+          break
       }
 
-      if(section.toLowerCase() != '中/eng') {
-        let anchor = document.getElementById(name);
+      if (section.toLowerCase() != '中/eng') {
+        let anchor = document.getElementById(name)
         window.scrollTo({
           top: anchor?.offsetTop,
           behavior: 'smooth',
-        })        
-      }
-      else {
-        if(this.lang == 'en') {
-          this.$router.push({path: this.$route.path, query: { lang: 'en' }});
+        })
+      } else {
+        if (this.lang == 'en') {
+          this.$router.push({ path: this.$route.path, query: { lang: 'en' } })
         } else {
-          this.$router.push({path: this.$route.path, query: { lang: 'chi' }});
+          this.$router.push({ path: this.$route.path, query: { lang: 'chi' } })
         }
       }
     },
     changeMenu() {
-      this.sideBtn = !this.sideBtn;
-      const sideMenuWidth = document.getElementById('sideMenu');
-      if(sideMenuWidth) {
-        if(this.sideBtn) {
-          sideMenuWidth.style.width = '40vh';
-        }
-        else {
-          sideMenuWidth.style.width = '0';
+      this.sideBtn = !this.sideBtn
+      const sideMenuWidth = document.getElementById('sideMenu')
+      if (sideMenuWidth) {
+        if (this.sideBtn) {
+          sideMenuWidth.style.width = '40vh'
+        } else {
+          sideMenuWidth.style.width = '0'
         }
       }
     },
     onWindowScroll() {
-      const length = this.isMobileDevice ? 100 : 55;
-      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const length = this.isMobileDevice ? 100 : 55
+      const scrollPosition =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        0
       if (scrollPosition >= this.showBurgerLength - length) {
-        this.showBurger = true;
+        this.showBurger = true
       } else {
-        this.showBurger = false;
-        this.sideBtn = false;
+        this.showBurger = false
+        this.sideBtn = false
       }
     },
     isMobile() {
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                this.isMobileDevice = true;
-            }
-            else {
-                this.isMobileDevice = false;
-            }
-        }
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        this.isMobileDevice = true
+      } else {
+        this.isMobileDevice = false
+      }
+    },
+    setTitle() {
+      // @ts-ignore
+      document.title = this.$translate(
+        'Angus的個人網站',
+        `Angus's Personal Website`
+      )
+    },
   },
 })
 </script>
@@ -256,7 +279,7 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 1024px) and (max-height: 600px) {
-.title {
+  .title {
     margin-top: 13%;
   }
 }
@@ -269,7 +292,6 @@ export default Vue.extend({
   .title h3 {
     font-size: 2em;
   }
-
 }
 .banner {
   background-color: #0086fe;
@@ -327,11 +349,11 @@ export default Vue.extend({
     rgb(211, 211, 211) 66.6%,
     rgb(105, 105, 105) 100%
   ); */
-    background: linear-gradient(
-    #042F59 0%,
-    #1A4C80 33.3%,
-    #3A70A6 66.6%,
-    #042F59 100%
+  background: linear-gradient(
+    #042f59 0%,
+    #1a4c80 33.3%,
+    #3a70a6 66.6%,
+    #042f59 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -366,7 +388,8 @@ export default Vue.extend({
 }
 
 @media screen and (max-width: 280px) {
-  .bannerName, .bannerText {
+  .bannerName,
+  .bannerText {
     font-size: 2em;
   }
   .bannerSen {
@@ -392,14 +415,14 @@ export default Vue.extend({
   }
 }
 @media screen and (max-width: 375px) {
-    .menu {
-      right: 9%;
-    }
-    .sideMenu {
-      padding-top: 37%;
-    }
-    .top span {
-      font-size: 0.7em;
-    }
+  .menu {
+    right: 9%;
+  }
+  .sideMenu {
+    padding-top: 37%;
+  }
+  .top span {
+    font-size: 0.7em;
+  }
 }
 </style>
