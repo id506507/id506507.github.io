@@ -36,6 +36,7 @@ export default Vue.extend({
             'C# .NET / .NET Core',
             'Python',
             'SQL (MS SQL, PostgreSQL, MySQL)',
+            'Stored Procedures',
             'Redis',
             'MVC',
           ],
@@ -49,6 +50,7 @@ export default Vue.extend({
             'HTML',
             'TypeScript / JavaScript',
             'CSS',
+            'Visual Basic (VB) WinForms',
           ],
         },
         {
