@@ -39,6 +39,7 @@ export default Vue.extend({
             'Stored Procedures',
             'Redis',
             'MVC',
+            'Visual Basic (VB) WinForms',
           ],
         },
         {
@@ -50,7 +51,6 @@ export default Vue.extend({
             'HTML',
             'TypeScript / JavaScript',
             'CSS',
-            'Visual Basic (VB) WinForms',
           ],
         },
         {
