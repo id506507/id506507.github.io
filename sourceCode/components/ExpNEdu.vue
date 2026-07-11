@@ -57,11 +57,15 @@ export default Vue.extend({
       work: {
         eng: [
           {
-            date: '2025.04 - 2025.07',
+            date: '2026.02 - Present',
             title: 'Analyst Programmer',
-            organization: 'Global Logistics System (HK) Co., Ltd',
+            organization: 'BOCI-Prudential Trustee Limited',
             detailList: [
-              'Contributed to developing an air freight booking website, facilitating seamless connections between users and airlines by enabling them to find and book flights based on cargo size, weight, origin, and destination. Designed and implemented backend solutions using C#, .NET, and MySQL, integrating diverse airline data and requirements to ensure system compatibility and functionality.',
+              'Supported daily operations of the asset management processes, including data validation, report generation, and issue resolution, while ensuring high data accuracy and operational stability.',
+              'Developed Python automation tool for efficient file handling and transmission, reducing manual effort while improving speed and reliability.',
+              'Enhanced existing workflows using C#, Python, SQL, and Stored Procedures, significantly reducing manual operations and minimizing errors in business processes.',
+              'Maintained existing systems using Visual Basic (VB) WinForms.',
+              'Secondment Contract Role from ICO Limited.',
             ],
           },
           {
@@ -107,11 +111,15 @@ export default Vue.extend({
         ],
         chi: [
           {
-            date: '2025.04 - 2025.07',
+            date: '2026.02 - 現在',
             title: '程式分析員',
-            organization: '傳訊香港有限公司',
+            organization: '中銀國際英國保誠信託有限公司',
             detailList: [
-              '參與航空貨運預訂網站的開發，促進用戶與航空公司之間的無縫銜接，協助用戶根據貨物大小、重量、起點和目的地查找並預訂航班。設計並實現後端解決方案，使用C#、.NET和MySQL，整合多家航空公司的數據和需求，確保系統兼容性和功能性。',
+              '支援資產管理流程的日常營運，包括資料驗證、報表產製及問題解決，確保高資料準確性與營運穩定性。',
+              '開發 Python 自動化工具，用以提升檔案處理與傳輸效率，減少人工操作並提高處理速度與可靠性。',
+              '使用 C#、Python、SQL 及 Stored Procedures 優化既有工作流程，大幅減少人工操作並降低業務流程中的錯誤發生率。',
+              '使用 Visual Basic (VB) WinForms 維護既有系統。',
+              'ICO Limited 外派合約職位（Secondment Contract Role）。',
             ],
           },
           {
@@ -143,7 +151,7 @@ export default Vue.extend({
             title: '網頁編寫',
             organization: 'Freelance',
             detailList: [
-              '從頭開始改進汽車零件銷售網站，幫助商店展示新產品，加快客戶找到所需商品的能力。', //使用純 HTML 和 CSS 改進 eBay 
+              '從頭開始改進汽車零件銷售網站，幫助商店展示新產品，加快客戶找到所需商品的能力。', //使用純 HTML 和 CSS 改進 eBay
             ],
           },
           {
@@ -234,6 +242,9 @@ export default Vue.extend({
   margin-bottom: 3%;
   display: flex;
   margin-left: 10%;
+}
+.workDetailDate i {
+  margin-right: 1%;
 }
 @media screen and (min-width: 1117px) {
   .workDetailDate {

@@ -11,10 +11,7 @@
       <div>{{ $translate('語言', 'Language') }}:</div>
       <div>{{ $translate(info.chi.lang, info.eng.lang) }}</div>
     </div>
-    <a
-      href="https://smailnchuedutw-my.sharepoint.com/:b:/g/personal/s103056023_smail_nchu_edu_tw/Ea-RNN8WQHNLrxNTMcYnYDoB8njiCBHijUoGw2htZIUTYA?e=Nzyf5z"
-      target="_blank"
-    >
+    <a href="/CV_ChanTszChing_Angus.pdf" target="_blank">
       <button class="cvBtn">
         <i class="el-icon-download cvIcon"></i>
         {{ $translate('查看 CV', 'View CV') }}
