@@ -79,6 +79,7 @@ export default Vue.extend({
               'Assisted Transition from TransUnion to Multiple Credit Reference Agencies (MCRA). Revamped TU RPA to schedule job using SFTP and API. Successfully reducing the wait time for credit reports by 50% and minimizing errors in data processing.',
               'Developed a land search RPA. Use Selenium to get information about residential units.',
               'Owner of a schedule job platform for legacy system, developed using C#. This platform implemented a batch Excel reader, automatic email reminders, generated reports, and updated data to database for internal user. This platform enhanced operational efficiency and streamlined data management processes.',
+              'Employed by Maxcolm Finance Limited.',
             ],
           },
           {
@@ -133,6 +134,7 @@ export default Vue.extend({
               '協助從 TransUnion 遷移到多個信用參考機構（MCRA）。重新設計 TU RPA 以使用 SFTP 和 API 排程任務，成功將信用報告的等待時間縮短了 50%，並減少了數據處理中的錯誤。',
               '開發了一個土地搜索 RPA，使用 Selenium 獲取有關住宅單位的信息。',
               '舊系統的排程任務平台擁有者，該平台實現了批量 Excel 讀取、自動電子郵件提醒、生成報告以及將數據更新到數據庫，供內部用戶使用。這個平台提高了運營效率，簡化了數據管理流程。',
+              '僱傭合約受聘於 Maxcolm Finance Limited。',
             ],
           },
           {
